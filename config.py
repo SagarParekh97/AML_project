@@ -14,16 +14,16 @@ class paths:
     raw_amass_dir = '/AMASS/ACCAS/ACCAD/s001/*.pkl'      # raw AMASS dataset path (raw_amass_dir/ACCAD/ACCAD/s001/*.npz)
     amass_dir = '/AMASS/processed_amass'         # output path for the synthetic AMASS dataset
 
-    raw_dipimu_dir = 'DIP_IMU_and_Others/DIP_IMU/'   # raw DIP-IMU dataset path (raw_dipimu_dir/s_01/*.pkl)
-    dipimu_dir = 'DIP_IMU_and_Others/processed_DIP_IMU'      # output path for the preprocessed DIP-IMU dataset
+    raw_dipimu_dir = 'data/DIP_IMU_and_Others/DIP_IMU/'   # raw DIP-IMU dataset path (raw_dipimu_dir/s_01/*.pkl)
+    dipimu_dir = 'data/DIP_IMU_and_Others/processed_DIP_IMU'      # output path for the preprocessed DIP-IMU dataset
 
     # DIP recalculates the SMPL poses for TotalCapture dataset. You should acquire the pose data from the DIP authors.
-    raw_totalcapture_dip_dir = 'DIP_IMU_and_Others/dataset_raw/TotalCapture/DIP_recalculate'  # contain ground-truth SMPL pose (*.pkl)
-    raw_totalcapture_official_dir = 'data/dataset_raw/TotalCapture/official'    # contain official gt (S1/acting1/gt_skel_gbl_pos.txt)
-    totalcapture_dir = 'data/dataset_work/TotalCapture'          # output path for the preprocessed TotalCapture dataset
+    raw_totalcapture_dip_dir = 'data/DIP_IMU_and_Others/dataset_raw/TotalCapture/DIP_recalculate'  # contain ground-truth SMPL pose (*.pkl)
+    raw_totalcapture_official_dir = 'data/TotalCapture/raw_data'    # contain official gt (S1/acting1/gt_skel_gbl_pos.txt)
+    totalcapture_dir = 'data/TotalCapture/processed_data'          # output path for the preprocessed TotalCapture dataset
 
     example_dir = 'data/example'                    # example IMU measurements
-    smpl_file = 'smpl/models/basicmodel_m_lbs_10_207_0_v1.0.0.pkl'              # official SMPL model path
+    smpl_file = 'data/smpl/models/basicmodel_m_lbs_10_207_0_v1.0.0.pkl'  # official SMPL model path
     weights_file = 'data/weights.pt'                # network weight file
 
 
