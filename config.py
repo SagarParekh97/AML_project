@@ -18,7 +18,7 @@ class paths:
     dipimu_dir = 'data/DIP_IMU_and_Others/processed_DIP_IMU'      # output path for the preprocessed DIP-IMU dataset
 
     # DIP recalculates the SMPL poses for TotalCapture dataset. You should acquire the pose data from the DIP authors.
-    raw_totalcapture_dip_dir = 'data/DIP_IMU_and_Others/dataset_raw/TotalCapture/DIP_recalculate'  # contain ground-truth SMPL pose (*.pkl)
+    raw_totalcapture_dip_dir = 'data/TotalCapture/ground_truth/TotalCapture_60FPS_Original'  # contain ground-truth SMPL pose (*.pkl)
     raw_totalcapture_official_dir = 'data/TotalCapture/raw_data'    # contain official gt (S1/acting1/gt_skel_gbl_pos.txt)
     totalcapture_dir = 'data/TotalCapture/processed_data'          # output path for the preprocessed TotalCapture dataset
 
