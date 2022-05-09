@@ -19,8 +19,8 @@ class BiRNN(nn.Module):
 
         self.relu = nn.ReLU()
         self.pre_fc = nn.Linear(cfg.input_dim , 256)
-        self.lstm = nn.LSTM(256, 256, cfg.n_layers, batch_first=True, dropout=cfg.dropout,bidirectional=True)
-        self.post_fc = nn.Linear(256*2,cfg.output_dim)
+        self.lstm = nn.GRU(256, 256, cfg.n_layers, batch_first=True, dropout=cfg.dropout,bidirectional=False)
+        self.post_fc = nn.Linear(256,cfg.output_dim)
         self.dropout = nn.Dropout(cfg.dropout)
 
     def forward(self, X):
@@ -94,8 +94,8 @@ def train(basepath):
     model = BiRNN()#.cuda()
     modelPath = basepath
     optimizer = optim.Adam(model.parameters(), lr=.001)
-    trainpath = './DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU_nn/imu_own_training.npz'
-    validpath = './DIPIMUandOthers/DIP_IMU_and_Others/DIP_IMU_nn/imu_own_validation.npz'
+    trainpath = 'DIP_IMU_and_Others/DIP_IMU_nn/imu_own_training.npz'
+    validpath = 'DIP_IMU_and_Others/DIP_IMU_nn/imu_own_validation.npz'
 
     f = open(modelPath + 'model_details', 'w')
     f.write(' comments: dip_imu_nn training on birnn')
@@ -186,7 +186,7 @@ def plotGraph(train_loss,val_loss,basepath):
     plt.show()
 
 if __name__ == "__main__":
-    #train('./model_new/')
+    # train('./model_new/GRU_1/')
     with open('./model_new/history.json') as f:
         data = json.load(f)
     train_loss,val_loss = [],[]
