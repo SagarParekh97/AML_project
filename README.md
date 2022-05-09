@@ -14,7 +14,7 @@ The Bidirectional LSTM model can be trained as follows:
 ```bash
 python3 DIP_IMU_NN_BiRNN.py --run-name lstm_bi --network LSTM --bidirectional --train --epochs 30
 ```
-For training the other models, you can use the arguments we provided in `./hyparameters.yaml`.
+For training the other models, you can use the arguments we provided in `./hyperparameters.yaml`.
 
 You can change the number of epochs for which the model is trained to observe the change in performance. 
 
