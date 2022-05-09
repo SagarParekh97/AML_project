@@ -11,10 +11,13 @@ Unzip the dataset in the folder /AML_project
 
 The Bidirectional LSTM model can be trained as follows:
 
+```bash
 python3 DIP_IMU_NN_BiRNN.py --run-name lstm_bi --network LSTM --bidirectional --train --epochs 30
-
-For training the other models, please check the arguments in hyparameters.yaml.
+```
+For training the other models, you can use the arguments we provided in `./hyparameters.yaml`.
 
 If you just wish to plot the data obtained from previously trained models, use the following command:
 
+```bash
 python3 DIP_IMU_NN_BiRNN.py --run-name <name_of_run_you_wish_to_plot> 
+```
