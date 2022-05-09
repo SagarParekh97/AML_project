@@ -7,6 +7,8 @@ GRU. We train models based on these architectures using the DIP-IMU Dataset.
 
 The DIP-IMU dataset can be downloaded from the following link:
 
+[Link to DIP_IMU dataset](https://drive.google.com/file/d/11jatRze_KlKH61ir1eu-xfeFD65nbvPj/view?usp=sharing)
+
 Unzip the dataset in the folder `./AML_project`
 
 The Bidirectional LSTM model can be trained as follows:
