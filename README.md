@@ -16,6 +16,8 @@ python3 DIP_IMU_NN_BiRNN.py --run-name lstm_bi --network LSTM --bidirectional --
 ```
 For training the other models, you can use the arguments we provided in `./hyparameters.yaml`.
 
+You can change the number of epochs for which the model is trained to observe the change in performance. 
+
 If you just wish to plot the data obtained from previously trained models, use the following command:
 
 ```bash
