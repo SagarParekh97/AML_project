@@ -233,11 +233,6 @@ if __name__ == "__main__":
         train(basepath, args)
     train_loss = pickle.load(open(basepath + 'train_loss.pkl', 'rb'))
     val_loss = pickle.load(open(basepath + 'validation_loss.pkl', 'rb'))
-    # train_loss,val_loss = [],[]
-    # for k,v in data.items():
-    # 	print(v[0])
-    # 	train_loss.append(v[0])
-    # 	val_loss.append(v[1])
     plotGraph(train_loss,val_loss,basepath)
 
 
